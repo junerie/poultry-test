@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-style: italic;
+    min-block-size: center;
+    text-align: center;
+}
