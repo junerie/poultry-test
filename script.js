@@ -5,7 +5,7 @@ const twitterBtn = document.getElementById('twitter');
 const newquoteBtn = document.getElementById('new-post');
 
 let apiQuotes = [];
-// Show new Quote
+// Show new Quote 
 function newQuotes() {
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   if (!quote.author){
@@ -13,8 +13,8 @@ function newQuotes() {
 }   else {
     quoteauthor.textContent = quote.author;
 }
-//  check quote lenght 
-if (quote.text.lenght > 100) {
+//  check quote lenght determine styling
+if (quote.text.lenght > 120) {
     quotetext.classList.add('long-quote');
 } else {
     quotetext.classList.remove('long-qoute');
@@ -34,16 +34,14 @@ async function getQuotes() {
 }
 
 // Tweet quote
-
 function tweetQuotes() {
-    const twitterUrl = `http://twitter.com/intent/tweet?text=${quotetext.textContent} - ${quoteauthor.textContent}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quotetext.textContent} - ${quoteauthor.textContent}`;
     window.open(twitterUrl, '_blank');
-
-    // event listeners
-newquoteBtn.addEventListener('click'), newQuotes;
-twitterBtn.addEventListener('click'), tweetQuotes;
-
 }
+
+// Event Listener
+newquoteBtn.addEventListener('click', newQuotes);
+twitterBtn.addEventListener('click', tweetQuotes);
 
 
 // On load
