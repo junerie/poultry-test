@@ -7,33 +7,36 @@
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Poultry.design">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <div id="London" class="tabcontent">
-        <h1>London</h1>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h1>Paris</h1>
-        <p>Paris is the capital of France.</p>
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h1>Tokyo</h1>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-      
-      <div id="Oslo" class="tabcontent">
-        <h1>Oslo</h1>
-        <p>Oslo is the capital of Norway.</p>
-      </div>
-      
-      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-      <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 </head>
-
+<div class="header" id="header">
+    <div id="Timeline" class="tabcontent">
+        <h1>Timeline</h1>
+        <p>welcome to my timeline.</p>
+      </div>
+      
+      <div id="Events" class="tabcontent">
+        <h1>Events</h1>
+        <p>be happy every day</p>
+      </div>
+      
+      <div id="Contact" class="tabcontent">
+        <h1>Contact</h1>
+        <p>You Can Contact me In Social Media Account.</p>
+      </div>
+      
+      <div id="About" class="tabcontent">
+        <h1>About Me</h1>
+        <p>I am yours.</p>
+      </div>
+      
+      <button class="tablink" onclick="openCity('Timeline', this, 'red')" id="defaultOpen">Timeline</button>
+      <button class="tablink" onclick="openCity('Events', this, 'green')">Events</button>
+      <button class="tablink" onclick="openCity('Contact', this, 'blue')">Contact</button>
+      <button class="tablink" onclick="openCity('About', this, 'orange')">About</button>
+</div>
 <body>
+    <h1>
+      <!-- Quote Container -->
     <div class="quote-container" id="quote-container">
         <!-- Qoute -->
         <div class="quote-text">
@@ -52,6 +55,7 @@
             <button id="new-post">New Quote</button>
         </div>
     </div>
+</h1>
 
     <div class="loader" id="loader"></div>
     <!--  -->

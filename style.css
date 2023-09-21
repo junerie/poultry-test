@@ -4,11 +4,15 @@ html {
     box-sizing: border-box;
 }
 
-head{
-    justify-content: baseline;
+.header {
     align-content: baseline;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    
+
 }
  
+
 /* Style the tab buttons */
 .tablink {
     background-color: #555;
@@ -20,6 +24,7 @@ head{
     padding: 14px 16px;
     font-size: 17px;
     width: 25%;
+
   }
   
   /* Change background color of buttons on hover */
@@ -36,11 +41,14 @@ head{
   }
   
   /* Style each tab content individually */
-  #London {background-color:red;}
-  #Paris {background-color:green;}
-  #Tokyo {background-color:blue;}
-  #Oslo {background-color:orange;}
+  #Timeline {background-color:red;}
+  #Events {background-color:green;}
+  #Contact {background-color:blue;}
+  #About {background-color:orange;}
+
+
   
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -50,18 +58,20 @@ body {
     font-family: montserrat, sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-top: auto;
+    position: relative;
+    
 }
-
 .quote-container{
-    justify-self: center;
-    align-content:last center;
     width: auto;
     max-width: 900px;
     padding: 20px 30px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10rem;
+    
+
+    
 }
 
 .quote-text{
@@ -120,17 +130,19 @@ button:active{
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear reverse;
+    
   }
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+    
   }
 
 .loader {
@@ -138,6 +150,9 @@ button:active{
     border-right: 16px solid green;
     border-bottom: 16px solid red;
     border-left: 16px solid pink;
+    justify-content: center;
+    align-content: center;
+    
   }
 
 /* Media Query: Tablet or Smaller */
