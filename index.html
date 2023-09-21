@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poultry Manager</title>
+    <title>Testing</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Poultry.design">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
+    <div id="London" class="tabcontent">
+        <h1>London</h1>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h1>Paris</h1>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h1>Tokyo</h1>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="Oslo" class="tabcontent">
+        <h1>Oslo</h1>
+        <p>Oslo is the capital of Norway.</p>
+      </div>
+      
+      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+      <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 </head>
+
 <body>
     <div class="quote-container" id="quote-container">
         <!-- Qoute -->
