@@ -4,30 +4,29 @@ const quoteauthor = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newquoteBtn = document.getElementById('new-post');
 const loader = document.getElementById('loader');
+const menuBars = document.getElementById('menu-bars');
+const overlay = document.getElementById('Overlay');
+const nav1 = document.getElementById('nav-1');
+const nav2 = document.getElementById('nav-2');
+const nav3 = document.getElementById('nav-3');
+const nav4 = document.getElementById('nav-4');
+const nav5 = document.getElementById('nav-5');
 
-function openCity(cityName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-  
-    // Show the specific tab content
-    document.getElementById(cityName).style.display = "block";
-  
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+
+function ToggleNav (){
+    // toggle menubars open/close
+    menuBars.classList.toggle("change");
+}
+
+menuBars.addEventListener('click', ToggleNav);
+nav1.addEventListener('click', ToggleNav);
+nav2.addEventListener('click', ToggleNav);
+nav3.addEventListener('click', ToggleNav);
+nav4.addEventListener('click', ToggleNav);
+nav5.addEventListener('click', ToggleNav);
+
+
+
 
 let apiQuotes = [];
 
@@ -85,7 +84,7 @@ newquoteBtn.addEventListener('click', newQuotes);
 twitterBtn.addEventListener('click', tweetQuotes);
 
 
+
+
 // On load
 getQuotes();
-
-

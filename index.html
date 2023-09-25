@@ -8,56 +8,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="header" id="header">
-    <div id="Timeline" class="tabcontent">
-        <h1>Timeline</h1>
-        <p>welcome to my timeline.</p>
-      </div>
-      
-      <div id="Events" class="tabcontent">
-        <h1>Events</h1>
-        <p>be happy every day</p>
-      </div>
-      
-      <div id="Contact" class="tabcontent">
-        <h1>Contact</h1>
-        <p>You Can Contact me In Social Media Account.</p>
-      </div>
-      
-      <div id="About" class="tabcontent">
-        <h1>About Me</h1>
-        <p>Hi am Junerie Natingga Vicoy im glad you visit my development website how can i help you just message me im willing to help.</p>
-      </div>
-      
-      <button class="tablink" onclick="openCity('Timeline', this, 'red')" id="defaultOpen">Timeline</button>
-      <button class="tablink" onclick="openCity('Events', this, 'green')">Events</button>
-      <button class="tablink" onclick="openCity('Contact', this, 'blue')">Contact</button>
-      <button class="tablink" onclick="openCity('About', this, 'orange')">About</button>
-</div>
 <body>
-    <h1>
-      <!-- Quote Container -->
-    <div class="quote-container" id="quote-container">
-        <!-- Qoute -->
-        <div class="quote-text">
-        <i class="fas fa-quote-left"></i>
-        <span id="quote"></span>
-        </div>
-        <!-- Author -->
-        <div class="quote-author">
-            <span id="author"></span>
-        </div>
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Post">
-            <i class="fab fa-twitter"></i>
-            </button>
-            <button id="new-post">New Quote</button>
-        </div>
+  <!-- Overlay menu -->
+  <dev class="Overlay" id="Overlay">
+    <!-- menu overlay -->
+    <nav>
+      <ul>
+        <li id="nav-1"><a href="#home">Home</a></li>
+        <li id="nav-2"><a href="#about">About</a></li>
+        <li id="nav-3"><a href="#skills">Skills</a></li>
+        <li id="nav-4"><a href="#projects">Projects</a></li>
+        <li id="nav-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </dev>
+  <!-- menu bar -->
+  <dev class="menu-bars" id="menu-bars">
+    <dev class="bar1"></dev>
+    <dev class="bar2"></dev>
+    <dev class="bar3"></dev>
+  </dev>
+  
+    <!-- Sections -->
+    <section id="home"><a href="https://jacinto.design" target="_blank">Junerie Vicoy</a></section>
+    <section id="about"><h1>Learn More About Me</h1></section>
+    <section id="skills"><h1> <!-- Quote Container -->
+      <div class="quote-container" id="quote-container">
+          <!-- Qoute -->
+          <div class="quote-text">
+          <i class="fas fa-quote-left"></i>
+          <span id="quote"></span>
+          </div>
+          <!-- Author -->
+          <div class="quote-author">
+              <span id="author"></span>
+          </div>
+          <!-- Buttons -->
+          <div class="button-container">
+              <button class="twitter-button" id="twitter" title="Post">
+              <i class="fab fa-twitter"></i>
+              </button>
+              <button id="new-post">New Quote</button>
+          </div>
+      </div>
+  </h1></section>
+    <section id="projects"><h1>These Are My Results</h1></section>
+    <section id="contact"><h1>Available Anytime</h1></section>
+     
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <img src="loaderwifi.svg" alt="loading">
     </div>
-</h1>
-
-    <div class="loader" id="loader"></div>
+    
     <!--  -->
     <script src="script.js"></script>
 
