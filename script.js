@@ -18,10 +18,6 @@ const projects = document.getElementById('projects');
 const contact = document.getElementById('contact');
 const navItems = [nav1, nav2, nav3, nav4, nav5];
 const sectionItems = [Home, skills, projects, contact];
-
-
-let apiQuotes = [];
-
 // show loader
 function loading()  {
     loader.hidden = false;
@@ -40,9 +36,6 @@ function navAnimation(direction1, direction2) {
         nav.classList.replace(`slide-${direction1}-${i + 1}`,`slide-${direction2}-${i + 1}`);
     });
 }
-
-
-
 // toggle nav
 function toggleNav(){
     // toggle menubars open/close
@@ -61,6 +54,14 @@ function toggleNav(){
         navAnimation('in', 'out')
     }
 }
+menuBars.addEventListener('click', toggleNav);
+navItems.forEach((nav) => {
+nav.addEventListener('click', toggleNav);
+});
+
+
+
+let apiQuotes = [];
 
 // Show new Quote 
 function newQuotes() {
@@ -98,50 +99,45 @@ function tweetQuotes() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quotetext.textContent} - ${quoteauthor.textContent}`;
     window.open(twitterUrl, '_blank');
 }
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-// Event Listener
 newquoteBtn.addEventListener('click', newQuotes);
 twitterBtn.addEventListener('click', tweetQuotes);
-menuBars.addEventListener('click', toggleNav);
-navItems.forEach((nav) => {
-nav.addEventListener('click', toggleNav);
-});
-
-
-
-
-
-
-
 // On load
 getQuotes();
+
+// Slide Show Container
+const sliderContainer = document.querySelector('.slider');
+slider(sliderContainer, 10000);
+function slider(container, slideDuration) {
+    const slides = container.querySelectorAll('.slider img');
+    const dots = container.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        slides[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.display = 'block';
+        updateDots();
+    }
+
+    function updateDots() {
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+    }
+
+    function startSlider() {
+        setInterval(showNextSlide, slideDuration);
+    }
+
+    function changeSlide(index) {
+        slides[currentIndex].style.display = 'none';
+        currentIndex = index;
+        slides[currentIndex].style.display = 'block';
+        updateDots();
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => changeSlide(index));
+    });
+
+    startSlider();
+}

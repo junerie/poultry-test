@@ -6,9 +6,17 @@
     <title>Testing</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Poultry.design">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <!-- Loader -->
+   <div class="loader" id="loader">
+    <img src="loaderwifi.svg" alt="loading">
+  </div>
+  
   <!-- Overlay menu -->
   <dev class="overlay overlay-slide-right overlay-slide-left" id="overlay">
     <!-- menu overlay -->
@@ -29,45 +37,80 @@
     <div class="bar3"></div>
   </div>
     <!-- Sections -->
-    <section id="home"><a href="https://jacinto.design" target="_blank">Junerie Vicoy</a>
-    <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <section id="home"><a href="" target="_blank">Junerie Vicoy Farm</a>
+    <dev class="header"><h1>POULTRY HERITAGE CHICKEN</h1></dev>
+      <!-- Slideshow container -->
+    <div class="slider-container">
+      <div class="slider">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+      </div>
+      <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+      </div>
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
     </section>
-    <section id="about"><h1>Learn More About Me</h1></section>
-    <section id="skills"><h1> <!-- Quote Container -->
+    <section id="about"><h2>Rhode Island Red</h2>
+      <div class="row align-items-start">
+        <div class="col">The Rhode Island Red is an American breed of domestic chicken. It is the state bird of Rhode Island. It was developed there and in Massachusetts in the late nineteenth century, by cross-breeding birds of Oriental origin such as the Malay with brown Leghorn birds from Italy. It was a dual-purpose breed, raised both for meat and for eggs; modern strains have been bred for their egg-laying abilities. The traditional non-industrial strains of the Rhode Island Red are listed as "watch" by The Livestock Conservancy. It is a separate breed to the Rhode Island White.</div> 
+        <table class="table">
+          <thead>
+            <tr>
+                <th scope="col"> Conversational</th>
+                <th scope="col"> Livestock Conservancy: watch</th>
+            </tr>
+          </thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Other Names</td>
+              <td>Rhode Island</td>
+            </tr>
+            <tr>
+              <td>Country origin</td>
+              <td>United States</td>
+            </tr>
+            <tr>
+              <td>Use</td>
+              <td>dual-purpose</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>Male: Standard: 3.9 kg (8.6 lb), Bantam: 965 g (34.04 oz)</td>
+            </tr>
+            <tr>
+              <td>Skin Color</td>
+              <td>Yellow</td>
+            </tr>
+            <tr>
+              <td>Egg Color</td>
+              <td>Brown</td>
+            </tr>
+            <tr>
+              <td>Comb Type</td>
+              <td>Single or Rose</td>
+            </tr>
+            <tr>
+              <td>APA</td>
+              <td>American</td>
+            </tr>
+            <tr>
+              <td>EE</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>PCGB</td>
+              <td>soft feather: heavy</td>
+            </tr>
+          </tbody>
+        </table>
+      <img src="image2.jpg" class="rounded float-end" class="img-rounded" alt="Cinque Terre">
+    </dev>
+    </section>
+    <section id="skills"><h3> <!-- Quote Container -->
       <div class="quote-container" id="quote-container">
           <!-- Qoute -->
           <div class="quote-text">
@@ -86,7 +129,7 @@
               <button id="new-post">New Quote</button>
           </div>
       </div>
-  </h1></section>
+  </h3></section>
     <section id="projects"><h1>These Are My Results</h1></section>
     <section id="contact"><h1>Available Anytime</h1></section>
      
