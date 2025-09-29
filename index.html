@@ -3,143 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Poultry.design">
+    <title>Junerie Vicoy Farm - Poultry Heritage Chicken</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Loader -->
-   <div class="loader" id="loader">
+  <!-- Loader -->
+  <div class="loader" id="loader">
     <img src="loaderwifi.svg" alt="loading">
   </div>
-  
+
   <!-- Overlay menu -->
-  <dev class="overlay overlay-slide-right overlay-slide-left" id="overlay">
-    <!-- menu overlay -->
+  <div class="overlay overlay-slide-right overlay-slide-left" id="overlay">
     <nav>
-      <ul>
+      <ul class="list-unstyled">
         <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
         <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
-        <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
-        <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#breeds">Breeds</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#gallery">Gallery</a></li>
         <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </dev>
-   <!-- menu bar -->
-   <div class="menu-bars" id="menu-bars">
+  </div>
+  <!-- menu bar -->
+  <div class="menu-bars" id="menu-bars">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
   </div>
-    <!-- Sections -->
-    <section id="home"><a href="" target="_blank">Junerie Vicoy Farm</a>
-    <dev class="header"><h1>POULTRY HERITAGE CHICKEN</h1></dev>
-      <!-- Slideshow container -->
-    <div class="slider-container">
-      <div class="slider">
-          <img src="image1.jpg" alt="Image 1">
-          <img src="image2.jpg" alt="Image 2">
-          <img src="image3.jpg" alt="Image 3">
-      </div>
-      <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-      </div>
-  </div>
-    </section>
-    <section id="about"><h2>Rhode Island Red</h2>
-      <div class="row align-items-start">
-        <div class="col">The Rhode Island Red is an American breed of domestic chicken. It is the state bird of Rhode Island. It was developed there and in Massachusetts in the late nineteenth century, by cross-breeding birds of Oriental origin such as the Malay with brown Leghorn birds from Italy. It was a dual-purpose breed, raised both for meat and for eggs; modern strains have been bred for their egg-laying abilities. The traditional non-industrial strains of the Rhode Island Red are listed as "watch" by The Livestock Conservancy. It is a separate breed to the Rhode Island White.</div> 
-        <table class="table">
-          <thead>
-            <tr>
-                <th scope="col"> Conversational</th>
-                <th scope="col"> Livestock Conservancy: watch</th>
-            </tr>
-          </thead>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Other Names</td>
-              <td>Rhode Island</td>
-            </tr>
-            <tr>
-              <td>Country origin</td>
-              <td>United States</td>
-            </tr>
-            <tr>
-              <td>Use</td>
-              <td>dual-purpose</td>
-            </tr>
-            <tr>
-              <td>width</td>
-              <td>Male: Standard: 3.9 kg (8.6 lb), Bantam: 965 g (34.04 oz)</td>
-            </tr>
-            <tr>
-              <td>Skin Color</td>
-              <td>Yellow</td>
-            </tr>
-            <tr>
-              <td>Egg Color</td>
-              <td>Brown</td>
-            </tr>
-            <tr>
-              <td>Comb Type</td>
-              <td>Single or Rose</td>
-            </tr>
-            <tr>
-              <td>APA</td>
-              <td>American</td>
-            </tr>
-            <tr>
-              <td>EE</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>PCGB</td>
-              <td>soft feather: heavy</td>
-            </tr>
-          </tbody>
-        </table>
-      <img src="image2.jpg" class="rounded float-end" class="img-rounded" alt="Cinque Terre">
-    </dev>
-    </section>
-    <section id="skills"><h3> <!-- Quote Container -->
-      <div class="quote-container" id="quote-container">
-          <!-- Qoute -->
-          <div class="quote-text">
-          <i class="fas fa-quote-left"></i>
-          <span id="quote"></span>
-          </div>
-          <!-- Author -->
-          <div class="quote-author">
-              <span id="author"></span>
-          </div>
-          <!-- Buttons -->
-          <div class="button-container">
-              <button class="twitter-button" id="twitter" title="Post">
-              <i class="fab fa-twitter"></i>
-              </button>
-              <button id="new-post">New Quote</button>
-          </div>
-      </div>
-  </h3></section>
-    <section id="projects"><h1>These Are My Results</h1></section>
-    <section id="contact"><h1>Available Anytime</h1></section>
-     
-    <!-- Loader -->
-    <div class="loader" id="loader">
-      <img src="loaderwifi.svg" alt="loading">
-    </div>
-    
-    <!--  -->
-    <script src="script.js"></script>
 
+  <!-- Home Section -->
+  <section id="home" class="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-dark text-white">
+    <div class="container text-center">
+      <h1 class="display-3 mb-4">Junerie N. Vicoy Farm</h1>
+      <h2 class="display-4 text-center mb-5">POULTRY HERITAGE CHICKEN</h2>
+      
+      <!-- Slideshow container -->
+      <div class="container slider-container">
+        <div class="slider row justify-content-center">
+          <div class="col-12">
+            <div class="slider-wrapper">
+              <img src="image1.jpg" alt="Heritage Chicken 1" class="img-fluid rounded mb-2 w-100 active">
+              <img src="image2.jpg" alt="Heritage Chicken 2" class="img-fluid rounded mb-2 w-100">
+              <img src="image3.jpg" alt="Heritage Chicken 3" class="img-fluid rounded mb-2 w-100">
+            </div>
+          </div>
+        </div>
+        <div class="dots text-center mt-2">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+      
+      <div class="mt-5">
+        <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-danger text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">About Our Farm</h2>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-7 mb-3 mb-md-0">
+          <p>Welcome to Junerie N. Vicoy Farm, where we specialize in raising heritage breed chickens with care and dedication. Our farm is committed to preserving the genetic diversity of traditional chicken breeds while providing high-quality poultry products to our community.</p>
+          <p>We believe in sustainable farming practices that respect both the animals and the environment. Our chickens are raised in spacious, natural environments where they can exhibit their natural behaviors, resulting in healthier birds and better-tasting meat and eggs.</p>
+          
+          <h3 class="mt-4">Our Mission</h3>
+          <p>To preserve heritage chicken breeds through responsible breeding practices while providing our customers with the highest quality poultry products and educational resources about sustainable farming.</p>
+        </div>
+        <div class="col-12 col-md-5 text-center">
+          <img src="image4.jpg" class="img-fluid rounded shadow" alt="Our Farm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breeds Section -->
+  <section id="breeds" class="py-5 bg-warning text-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Rhode Island Red</h2>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+          <img src="image2.jpg" class="img-fluid rounded shadow" alt="Rhode Island Red Chicken">
+        </div>
+        <div class="col-12 col-md-7">
+          <p>The Rhode Island Red is an American breed of domestic chicken. It is the state bird of Rhode Island. It was developed there and in Massachusetts in the late nineteenth century, by cross-breeding birds of Oriental origin such as the Malay with brown Leghorn birds from Italy. It was a dual-purpose breed, raised both for meat and for eggs; modern strains have been bred for their egg-laying abilities. The traditional non-industrial strains of the Rhode Island Red are listed as "watch" by The Livestock Conservancy. It is a separate breed to the Rhode Island White.</p>
+          
+          <table class="table table-bordered table-striped bg-white text-dark">
+            <thead>
+              <tr>
+                <th scope="col">Characteristic</th>
+                <th scope="col">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Conservation Status</td>
+                <td>Livestock Conservancy: watch</td>
+              </tr>
+              <tr>
+                <td>Other Names</td>
+                <td>Rhode Island</td>
+              </tr>
+              <tr>
+                <td>Country of Origin</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td>Primary Use</td>
+                <td>Dual-purpose (meat & eggs)</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>Male: Standard: 3.9 kg (8.6 lb), Bantam: 965 g (34.04 oz)</td>
+              </tr>
+              <tr>
+                <td>Skin Color</td>
+                <td>Yellow</td>
+              </tr>
+              <tr>
+                <td>Egg Color</td>
+                <td>Brown</td>
+              </tr>
+              <tr>
+                <td>Comb Type</td>
+                <td>Single or Rose</td>
+              </tr>
+              <tr>
+                <td>APA Recognition</td>
+                <td>American</td>
+              </tr>
+              <tr>
+                <td>EE Recognition</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>PCGB Classification</td>
+                <td>Soft feather: heavy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="text-center mb-4">Why Heritage Breeds?</h3>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="card-title"><i class="fas fa-heart text-danger"></i> Genetic Diversity</h4>
+                  <p class="card-text">Heritage breeds maintain genetic diversity that is critical for the long-term health of poultry populations and food security.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="card-title"><i class="fas fa-leaf text-success"></i> Sustainability</h4>
+                  <p class="card-text">These breeds are naturally hardy and well-adapted to various environments, requiring fewer resources than commercial breeds.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="card-title"><i class="fas fa-drumstick-bite text-warning"></i> Superior Flavor</h4>
+                  <p class="card-text">Heritage breeds typically offer better flavor and texture in meat and eggs compared to industrial varieties.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-info text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Poultry Gallery</h2>
+      <p class="text-center mb-5">Explore our collection of heritage breed chickens and farm life</p>
+      
+      <div class="row" id="galleryContainer">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="image1.jpg" class="card-img" alt="Chicken 1">
+            <div class="card-img-overlay d-flex align-items-end">
+              <h5 class="card-title bg-dark bg-opacity-75 p-2 w-100">Rhode Island Red Chickens</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="image3.jpg" class="card-img" alt="Chicken 2">
+            <div class="card-img-overlay d-flex align-items-end">
+              <h5 class="card-title bg-dark bg-opacity-75 p-2 w-100">Free-range Heritage Breeds</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="image5.jpg" class="card-img" alt="Farm">
+            <div class="card-img-overlay d-flex align-items-end">
+              <h5 class="card-title bg-dark bg-opacity-75 p-2 w-100">Our Sustainable Farm</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button id="viewMoreBtn" class="btn btn-light btn-lg">View More Photos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-success text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center mb-5">Have questions about our heritage chickens or farming practices? Get in touch!</p>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h3>Visit Our Farm</h3>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Poblacion Lakewood Zamboanga Del Sur</p>
+          <p><i class="fas fa-phone me-2"></i> (+63)9161169766</p>
+          <p><i class="fas fa-envelope me-2"></i> info@junerievicoyfarm.com</p>
+          
+          <h3 class="mt-4">Farm Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          <p>Saturday: 8:00 AM - 6:00 PM</p>
+          <p>Sunday: Closed (except for special events)</p>
+        </div>
+        
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Junerie N. Vicoy Farm. All Rights Reserved,Preserving Heritage Breeds for Future Generations</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel">Our Poultry Gallery</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row" id="modalGalleryContainer">
+            <!-- Images will be loaded here -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Gallery functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // View More Photos button functionality
+      document.getElementById('viewMoreBtn').addEventListener('click', function() {
+        // Show loading state
+        const modalContainer = document.getElementById('modalGalleryContainer');
+        modalContainer.innerHTML = '<p class="text-center">Loading gallery...</p>';
+        
+        // Determine the correct API base URL
+        const isLocalFile = window.location.protocol === 'file:';
+        const apiBaseUrl = isLocalFile ? 'http://localhost:3000' : '';
+        
+        // Load all gallery images from Node.js backend
+        fetch(`${apiBaseUrl}/api/gallery`)
+          .then(response => response.json())
+          .then(data => {
+            if (data.success && data.data.length > 0) {
+              modalContainer.innerHTML = '';
+              
+              // Add all images to the modal
+              data.data.forEach((image, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-4 mb-4';
+                
+                col.innerHTML = `
+                  <div class="card">
+                    <img src="${apiBaseUrl}${image.path}" class="card-img" alt="${image.title}" onerror="this.src='https://via.placeholder.com/300x200?text=Image+Not+Found'">
+                    <div class="card-body">
+                      <h5 class="card-title">${image.title}</h5>
+                      <p class="card-text">${image.description}</p>
+                    </div>
+                  </div>
+                `;
+                
+                modalContainer.appendChild(col);
+              });
+            } else {
+              modalContainer.innerHTML = '<p class="text-center">No images available in the gallery.</p>';
+            }
+            
+            // Show the modal after content is loaded
+            $('#galleryModal').modal('show');
+          })
+          .catch(error => {
+            console.error('Error loading gallery images:', error);
+            modalContainer.innerHTML = '<p class="text-center text-danger">Error loading gallery images. Please make sure the Node.js server is running on port 3000.</p>';
+            // Show the modal even if there's an error to display the message
+            $('#galleryModal').modal('show');
+          });
+      });
+    });
+  </script>
 </body>
 </html>

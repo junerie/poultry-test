@@ -1,0 +1,22 @@
+{
+  "name": "poultry-farm-backend",
+  "version": "1.0.0",
+  "description": "Backend for Junerie N. Vicoy Farm website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["poultry", "farm", "nodejs", "express"],
+  "author": "Junerie N. Vicoy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
